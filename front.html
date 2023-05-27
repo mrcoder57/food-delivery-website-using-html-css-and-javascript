@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODYVERSE LOGIN
+
+    </title>
+    <style>
+        . {
+            padding: 0%;
+            margin: 0%;
+        }
+html{
+    font-size: 62.5%;
+}
+        body {
+            background: url("./bc.jpeg");
+            background-repeat: no-repeat;
+            display: flexbox;
+            flex-wrap: wrap-reverse;
+            color: whitesmoke;
+            background-size: 100%;
+            width: 100vw;
+        }
+
+        .login {
+            display: inline-flex;
+            position: relative;
+            left: 520px;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #companyname {
+            text-decoration: dotted;
+            color: whitesmoke;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .login img {
+            height: 12.5rem;
+        }
+
+        .left {
+            display: block;
+            position: relative;
+            left: 10%;
+            margin: 5%;
+            width: 20vw;
+            padding-left: 2%;
+            background: url("./WhatsApp\ Image\ 2023-01-14\ at\ 14.30.13.jpeg");
+            color: white;
+  border: 1px solid violet ;
+  opacity: 0.6;
+  border-radius: 20%;
+
+
+        }
+        .left:hover {
+            display: block;
+            position: relative;
+            left: 10%;
+            margin: 5%;
+            width: 20vw;
+            padding-left: 2%;
+            background: url("./bc.jpeg");
+            color: white;
+  border: 1px solid violet;
+  opacity: 1.6;
+  border-radius: 20%;
+
+
+        }
+
+
+        #login_input {
+            padding-left: 2.5rem;
+            padding-right: 2.6rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-radius: 1rem;
+            margin-top: 1rem;
+            background: url(./20468918.jpg);
+        }
+
+        #password_input {
+            padding-left: 2.5rem;
+            padding-right: 2.6rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-radius: 1rem;
+            margin-top: 1rem;
+            background: url(./20468918.jpg);
+        }
+
+        #lgnBtn:hover {
+            cursor: pointer;
+            background: -webkit-linear-gradient();
+        }
+
+        .container img {
+            display: inline;
+            justify-content: space-between;
+            float: right;
+            position: relative;
+            bottom: 40rem;
+            right: 18rem;
+        }
+        #loading{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background:#d6cfc7 url("./animated-medium20210730-12690--unscreen.gif")
+            no-repeat center;
+            z-index: 999999;
+        }
+    </style>
+
+</head>
+
+<body onload="loadFun()">
+    <div id="loading"></div>
+    <header class="login">
+        <h1 id="companyname" style="font-size:4rem">FOODYVERSE</h1>
+        <img src="./Ellipse 5.png" alt="" srcset=""><br><br>
+        <P style="display: block;position: relative;top: 10rem;right: 45rem;font-size: 2rem;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">we are the one providing best food delivery services in your area! <br>
+        our services are availablein all allover India.</P>
+    </header>
+    <section class="container">
+        <div class="left">
+
+
+
+            <h2 id="signup"
+                style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;text-size-adjust: 45px;opacity: 1;">Login</h2>
+            <br>
+            <h7>Please Enter your email</h7><br>
+            <input type="email" name="" id="login_input" placeholder="pls enter your email"><br>
+            <h7>Password</h7><br>
+            <input type="password" name="" id="password_input" placeholder="pls enter your Password"><br>
+           <a href="./index.html"> <button id="lgnBtn"
+                style="padding: .8rem;margin: 1rem;width: 6rem;background-color: coral; align-items: center;border-radius: 20px;">Login</button>
+            </a>
+                <Button
+                style="padding: .8rem;margin: 1rem;width: 6rem;align-items: center;border-radius: 20px;">Reset</Button>
+
+        </div>
+        <img src="./animated-medium20211231-22731--unscreen.gif" alt="" srcset="">
+    </section>
+   <script>
+    var preloader=document.getElementById('loading');
+    function loadFun(){
+        preloader.style.display='none';       
+    }
+   </script>
+</body>
+
+</html>

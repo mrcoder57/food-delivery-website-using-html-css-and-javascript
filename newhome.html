@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <style>
+        html {
+            font-size: 62.5%;
+            height: 1440px;
+          
+        }
+body{
+    background-color: #b7e9f7;
+    background-size:cover ;
+}
+        .navbar {
+            position: fixed;
+            width: 6vw;
+            height: 90vh;
+            left: 2%;
+            top: 05%;
+
+            background: #FE724C;
+            border-radius: 30px;
+        }
+
+        .heado {
+            position: absolute;
+            width: 90vw;
+            height: 20vh;
+            left: 10%;
+            top: 5%;
+            
+            border-radius: 30px;
+        }
+
+        #companyname {
+            position: absolute;
+            width: 25vw;
+            height: 12vh;
+            left: 35%;
+            right: auto;
+            top: -10%;
+
+
+            font-style: normal;
+            font-weight: 40rem;
+            font-size: 3.2rem;
+            line-height: 4rem;
+            text-align: center;
+            font-family: 'Arial Black';
+            color: #000000;
+
+        }
+
+        .heado img {
+            position: absolute;
+            width: 10vw;
+            height: 15vh;
+            left: 1%;
+            top: -12%;
+            bottom: 2%;
+
+            background: url(Ellipse 5.png);
+        }
+
+        #search {
+            position: absolute;
+            width: 16vw;
+            height: 6.7vh;
+            left: 70%;
+            top: 9.4%;
+
+            background: #D9D9D9;
+            border-radius: 30px;
+        }
+
+        #searchbtn {
+            position: absolute;
+            width: 3vw;
+            height: 7vh;
+            left: 87.54%;
+            top: 9.7%;
+            border-radius: 30px;
+
+            background: url('./searchicon.svg');
+            box-shadow: none;
+        }
+
+        #welcome {
+            position: absolute;
+            width: 35vw;
+            height: 25vh;
+            left: 10%;
+            top: 25%;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2.5rem;
+            line-height: 42px;
+            text-align: center;
+
+            color: #fff;
+            background-color: #FE724C;
+            border-radius: 30px;
+
+        }
+
+        #fifty {
+            position: absolute;
+            width: 35vw;
+            height: 25vh;
+            left: 50%;
+            top: 25%;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2.5rem;
+            line-height: 42px;
+            text-align: center;
+            background-color: #FE724C;
+            color: #fff;
+            
+            border-radius: 30px;
+
+        }
+
+        #Ellipse1 {
+            position: absolute;
+            width: 170px;
+            height: 104px;
+            left: 10%;
+            top: 481px;
+            border-radius: 50%;
+            background: #D9D9D9;
+
+        }
+
+        #Ellipse2 {
+            position: absolute;
+            width: 170px;
+            height: 104px;
+            left: 25%;
+            top: 481px;
+            border-radius: 50%;
+            background: #D9D9D9;
+        }
+
+        #Ellipse3 {
+            position: absolute;
+            width: 170px;
+            height: 104px;
+            left: 40%;
+            top: 481px;
+            border-radius: 50%;
+            background: #D9D9D9;
+        }
+
+        #Ellipse4 {
+            position: absolute;
+            width: 170px;
+            height: 104px;
+            left: 55%;
+            top: 481px;
+            border-radius: 50%;
+            background: #D9D9D9;
+        }
+
+        #Ellipse5 {
+            position: absolute;
+            width: 170px;
+            height: 104px;
+            left: 70%;
+            top: 481px;
+            border-radius: 50%;
+            background: #D9D9D9;
+        }
+
+
+        #home {
+            position: absolute;
+            width: 3.5vw;
+            height: 7vh;
+            left: 18%;
+            top: 5%;
+            border: none;
+            background: url('./home_FILL0_wght400_GRAD0_opsz48.svg');
+        }
+
+        #cart {
+            position: absolute;
+            width: 3.5vw;
+            height: 7vh;
+            left: 18%;
+            top: 18%;
+            border: none;
+            background: url("./shopping_cart_checkout_FILL0_wght400_GRAD0_opsz48.svg");
+        }
+
+        #mail {
+            position: absolute;
+            width: 3.5vw;
+            height: 7vh;
+            left: 18%;
+            top: 28%;
+            border: none;
+
+            background: url("./mail_FILL0_wght400_GRAD0_opsz48.svg");
+        }
+
+        #info {
+            position: absolute;
+            width: 3.5vw;
+            height: 7vh;
+            left: 18%;
+            top: 38%;
+            border: none;
+            background: url("./info_FILL0_wght400_GRAD0_opsz48.svg");
+        }
+
+        #log {
+            position: absolute;
+            width: 3.5vw;
+            height: 7vh;
+            left: 18%;
+            top: 90%;
+            border: none;
+            background: url("./logout_FILL0_wght400_GRAD0_opsz48.svg");
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        #slogan {
+            position: absolute;
+            width: 433px;
+            height: 52px;
+            left: 3%;
+            top: 15%;
+            text-decoration: underline;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 42px;
+            text-align: center;
+
+            color: #FE724C;
+        }
+
+        #deal {
+            position: absolute;
+            width: 422px;
+            height: 55px;
+            left: 2.5%;
+            top: 60%;
+
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 42px;
+            text-align: center;
+            text-decoration:underline ;
+            color: #FE724C;
+        }
+        #popular{
+            position: absolute;
+width: 406px;
+height: 47px;
+left: 12%;
+top: 105%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 3rem;
+line-height: 42px;
+        }
+        #Snack1{
+            position: absolute;
+width: 156px;
+height: 47px;
+left:13.5% ;
+top: 90%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 2.5rem;
+line-height: 42px;
+
+color: #FE724C;
+        }
+        #Snack2{
+            position: absolute;
+width: 156px;
+height: 47px;
+left:26% ;
+top: 90%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 2.5rem;
+line-height: 42px;
+
+color: #FE724C;
+        }#Snack3{
+            position: absolute;
+width: 156px;
+height: 47px;
+left:44% ;
+top: 90%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 2.5rem;
+line-height: 42px;
+
+color: #FE724C;
+        }#Snack4{
+            position: absolute;
+width: 156px;
+height: 47px;
+left:58% ;
+top: 90%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 2.5rem;
+line-height: 42px;
+
+color: #FE724C;
+        }#Snack5{
+            position: absolute;
+width: 156px;
+height: 47px;
+left:74% ;
+top: 90%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 2.5rem;
+line-height: 42px;
+
+color: #FE724C;
+        }
+        #image1{
+            position: absolute;
+width: 263px;
+height: 171px;
+left: 12.5%;
+top: 750px;
+
+background: url("veg-biryani-recipe.jpg");
+        }
+        #image2{
+            position: absolute;
+width: 263px;
+height: 171px;
+left: 40%;
+top: 750px;
+
+background: url("./Shahi-Paneer-1.jpg");
+        }
+        #image3{
+            position: absolute;
+width: 263px;
+height: 171px;
+left: 65%;
+top: 750px;
+
+background: url("./dishes.jpg") ;
+        }
+        #image21{
+            position: absolute;
+width: 263px;
+height: 171px;
+left: 12.5%;
+top: 1020px;
+
+background: url("./coca.jpg");
+        }
+        #image22{
+            position: absolute;
+width: 263px;
+height: 171px;
+left: 40%;
+top: 1020px;
+
+background: url("./coca.jpg");
+        }
+        #image23{
+            position: absolute;
+width: 263px;
+height: 171px;
+left: 65%;
+top: 1020px;
+
+background: #D9D9D9;
+        }
+        #price11{
+            position: absolute;
+width: 216px;
+height: 82px;
+left: 13.5%;
+top: 905px;
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 700;
+font-size: 2.2rem;
+line-height: 42px;
+
+color: #000000;
+        }
+        #price21{
+            position: absolute;
+width: 216px;
+height: 82px;
+left: 40%;
+top: 905px;
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 700;
+font-size: 2.2rem;
+line-height: 42px;
+
+color: #000000;
+        }
+        #price31{
+            position: absolute;
+width: 216px;
+height: 82px;
+left: 65%;
+top: 905px;
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 700;
+font-size: 2.2rem;
+line-height: 42px;
+
+color: #000000;
+        }
+        #price22{
+            position: absolute;
+width: 216px;
+height: 82px;
+left: 1.5%;
+top: 89%;
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 700;
+font-size: 2.2rem;
+line-height: 42px;
+
+color: #000000;
+        }
+        #price23{
+            position: absolute;
+width: 216px;
+height: 82px;
+left: 3%;
+top: 89%;
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 700;
+font-size: 2.2rem;
+line-height: 42px;
+
+color: #000000;
+        }
+        #price24{
+            position: absolute;
+width: 216px;
+height: 82px;
+left: 2%;
+top: 89%;
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 700;
+font-size: 2.2rem;
+line-height: 42px;
+
+color: #000000;
+        }
+        .backg{
+            background-color: #D9D9D9;
+        }
+        #copyr{
+            position: absolute;
+width: 1440px;
+height: 164px;
+left: 9px;
+top: 1420px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+color: #000000;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="left">
+        <div class="navbar">
+            <button id="home"></button>
+            <button id="cart"></button>
+            <button id="mail"></button>
+            <button id="info"></button>
+            <button id="log"></button>
+        </div>
+    </section>
+    <header class="heado">
+        <img src="./Ellipse 5.png" alt="">
+        <p id="companyname">FOODYVERSE</p>
+        <input type="search" name="" id="search" placeholder="Search"><button id="searchbtn"></button>
+    </header>
+    <section class="container">
+        <h4 id="slogan">Grab Your Meal:-</h4>
+        <p id="welcome">Welcome to FOODYVERSE.com we are always there to provide you the online delivery service</p>
+        <p id="fifty"></p>
+        <h4 id="deal">We Deal In~</h4>
+        <p id="Snack1">Snacks</p>
+        <img src="./Ellipse 2.png" id="Ellipse1" alt="" srcset="">
+        <p id="Snack2">FAST FOOD</p>
+        <img src="./Ellipse 1.png" id="Ellipse2" alt="" srcset="">
+        <p id="Snack3">Non Veg</p>
+        <img src="./Ellipse 3.png" id="Ellipse3" alt="" srcset="">
+        <p id="Snack4">Indian</p>
+        <img src="./Ellipse 3.png" id="Ellipse4" alt="" srcset="">
+        <p id="Snack5">Beverges</p>
+        <img src="./Ellipse 1.png" id="Ellipse5" alt="" srcset="">
+        <div class="backg">
+<p id="popular">Popular Items</p>
+<div id="image1"></div><p id="price11">veg Biryani <br>100/each</p>
+<p id="price21">Special Curry<br>100/each</p>
+<p id="price31">Sahi paneer<br>100/each</p>
+<div id="image2"></div>
+<div id="image3"></div>
+<div id="image21"><p id="price22">Special Curry<br>100/each</p></div>
+<div id="image22"><p id="price23">Special Curry<br>100/each</p></div>
+<div id="image23"><p id="price24">Special Curry<br>100/each</p></div>
+        </div>
+    </section>
+<footer class="footer">
+<p id="copyr">@copyright FOODYVERSE <br>contact us <br>linkedin
+<br>instagram</p>
+
+</footer>
+</body>
+
+</html>
